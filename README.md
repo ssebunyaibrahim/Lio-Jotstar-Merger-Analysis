@@ -1,32 +1,45 @@
-# COMPREHENSIVE ANALYSIS REPORT FOR LIO AND JOTSTAR OTT MERGER PREPARATION
+# **COMPREHENSIVE ANALYSIS REPORT FOR LIO AND JOTSTAR OTT MERGER PREPARATION**
 
-**Analysis Period: January to November 2024**
+## **Analysis Period: January to November 2024**
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Merged%20logos.PNG"
+     style="display: block; margin: 40px auto;"/>
+
+## **Table of Contents**
+  - [**Company Profile**](#company-profile)
+  - [**Project Background**](#project-background)
+  - [**Objectives**](#objectives)
+  - [**Links**](#links)
+  - [**Key Metrics and Dimensions**](#key-metrics-and-dimensions)
+    - [**North Star KPIs**](#north-star-kpis)
+    - [**Key Dimensions Used in the Analysis**](#key-dimensions-used-in-the-analysis)
+  - [**Executive Summary**](#executive-summary)
+  - [**Data Structure and Initial Checks**](#data-structure-and-initial-checks)
+    - [**Data Import**](#data-import)
+      - [LioCinema Database](#liocinema-database)
+      - [Jotstar Database:](#jotstar-database)
+    - [**Data Consolidation**](#data-consolidation)
+    - [**Dimension Table Creation**](#dimension-table-creation)
+    - [**Data Cleaning and Transformation**](#data-cleaning-and-transformation)
+    - [**Loading into Power BI**](#loading-into-power-bi)
+  - [**Insights Deep Dive**](#insights-deep-dive)
+    - [**Subscriber Insights**](#subscriber-insights)
+    - [**Content Library Comparison**](#content-library-comparison)
+    - [**Inactivity Analysis**](#inactivity-analysis)
+    - [**Watch Time Analysis**](#watch-time-analysis)
+    - [**Upgrade and Downgrade Trends**](#upgrade-and-downgrade-trends)
+    - [**Revenue Analysis**](#revenue-analysis)
+  - [**Recommendations**](#recommendations)
+    - [**Leverage Jotstar’s Premium Content to Convert LioCinema’s Free Users**](#leverage-jotstars-premium-content-to-convert-liocinemas-free-users)
+    - [**Introduce a Mid-Tier VIP Plan to Reduce Downgrades**](#introduce-a-mid-tier-vip-plan-to-reduce-downgrades)
+    - [**Optimize Content Recommendations to Increase Watch Time**](#optimize-content-recommendations-to-increase-watch-time)
+    - [**Tailor Regional Strategies to Boost Tier 2 and Tier 3 Engagement**](#tailor-regional-strategies-to-boost-tier-2-and-tier-3-engagement)
+    - [**Address Seasonal Revenue Declines with Targeted Campaigns**](#address-seasonal-revenue-declines-with-targeted-campaigns)
+
 
 ---
 
-## Table of Contents
-
-- [Company Profile](#company-profile)
-- [Project Background](#project-background)
-- [Objectives](#objectives)
-- [LINKS](#links)
-- [Key Metrics and Dimensions](#key-metrics-and-dimensions)
-  - [North Star KPIs](#north-star-kpis)
-  - [Key Dimensions Used in the Analysis](#key-dimensions-used-in-the-analysis)
-- [Executive Summary](#executive-summary)
-- [Data Structure and Initial Checks](#data-structure-and-initial-checks)
-- [Insights Deep Dive](#insights-deep-dive)
-  - [Subscriber Insights](#subscriber-insights)
-  - [Content Library Comparison](#content-library-comparison)
-  - [Inactivity Analysis](#inactivity-analysis)
-  - [Watch Time Analysis](#watch-time-analysis)
-  - [Upgrade and Downgrade Trends](#upgrade-and-downgrade-trends)
-  - [Revenue Analysis](#revenue-analysis)
-- [Recommendations](#recommendations)
-
----
-
-## Company Profile
+## **Company Profile**
 
 **Lio:** A leading telecommunications provider in India with its streaming platform, LioCinema. The platform is known for its expansive subscriber base and Hindi content focus.
 
@@ -34,13 +47,13 @@
 
 ---
 
-## Project Background
+## **Project Background**
 
 As part of a strategic merger, Lio intends to combine its streaming platform LioCinema with Jotstar to create a leading OTT (Over-the-Top) platform in India. This merger aims to leverage LioCinema’s broad subscriber base alongside Jotstar’s diverse content library to revolutionize digital streaming in the region.
 
 ---
 
-## Objectives
+## **Objectives**
 
 Insights and recommendations are provided on:
 
@@ -53,17 +66,18 @@ Insights and recommendations are provided on:
 
 ---
 
-## LINKS
+## **Links**
 
-- **Github Project:**
-- **PowerBi File:**
-- **Interactive Dashboard:**
+- **[PowerBi File:](https://github.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/blob/52ce63ae30c3a6749c4c2f0cba04ee1d39923ca3/Lio_jotsta_BI%20dashboard.pbix)**
+- **[Interactive Dashboard:](https://app.powerbi.com/view?r=eyJrIjoiN2Q3OGY5MjktMTkyYi00NTZhLWFkNTctZTAxZGU1MjAyOWNhIiwidCI6IjA2ODdlOTNmLWI4ZDgtNGI1My1iNzE4LTVhOTY0OWZmZDA4YSJ9)**
 
 ---
 
-## Key Metrics and Dimensions
+## **Key Metrics and Dimensions**
+<details>
+<summary>Click to expand/collapse</summary>
 
-### North Star KPIs
+### **North Star KPIs**
 
 - **Total Users:** Tracks the total number of users and monthly additions, reflecting the platform’s ability to attract new audiences.
 - **Active User Rate:** Measures the percentage of users actively engaging with the platform, indicating user retention and engagement.
@@ -72,7 +86,7 @@ Insights and recommendations are provided on:
 - **Upgrade and Downgrade Rates:** Assesses user satisfaction and perceived value by tracking transitions between subscription tiers.
 - **Paid User Penetration:** Highlights the proportion of users on paid plans, showcasing the platform’s ability to convert Free users into paying customers.
 
-### Key Dimensions Used in the Analysis
+### **Key Dimensions Used in the Analysis**
 
 - **Time Period (Month):** Identifies seasonal trends, growth patterns, and demand fluctuations over the analysis period (January–November 2024).
 - **City Tier (Tier 1, Tier 2, Tier 3):** Provides insights into regional performance and helps tailor strategies for urban vs. rural audiences.
@@ -81,24 +95,39 @@ Insights and recommendations are provided on:
 - **Device Type (Mobile, TV, Laptop):** Evaluates engagement patterns based on the devices users prefer for content consumption.
 - **Content Preferences (Language, Type):** Highlights audience interests in specific languages (e.g., Hindi, English) and content types (Movies, Series, Sports).
 
+</details>
+
+## **Executive Summary**
+
+For the analysis period (January to November 2024), LioCinema successfully accumulated 183,446 users, vastly outpacing Jotstar's 44,620 users—a 4x difference indicating LioCinema's significant market advantage. 
+
+LioCinema had a massive Gen Z user base, with 91.23% of users aged 18-24—10x higher than Jotstar's 8.77% in the same age bracket. This suggests LioCinema is particularly popular among younger audiences. Jotstar, in contrast, had a stronger presence among the 25-44 age group. While LioCinema still led in these segments.
+
+LioCinema’s largest user segment was from Tier 3 cities while Jotstar’s biggest audience was from Tier 1 cities (38.29% of tier 1 users).
+
+Jotstar offered a VIP plan (19,157 users) while LioCinema did not, and LioCinema’s Basic plan (53,362 users) was also absent on Jotstar.
+Jotstar’s library includes 2,360 titles, with a strong focus on English (49.40%) and sports (19.66%). LioCinema has 1,250 titles, emphasizing Hindi (31.68%) and regional languages like Telugu (18.60%) and Tamil (16.84%).
+
+User engagement metrics revealed Jotstar's edge, with 85.09% of its users being active compared to LioCinema’s 55.13%, and a notably higher average watch time of 117.24 hrs. against LioCinema’s 25.61 hrs.
+
+Users with higher watch times are less likely to become inactive (e.g., Jotstar’s active users watch 132.03 hours vs. 32.85 hours for inactive users). 
+
+LioCinema faced a higher downgrade rate at 83.39% versus Jotstar's 38.67%, suggesting potential issues with LioCinema's premium offerings. Conversely Jotstar's paid user base constituted 70.99% of total users compared to LioCinema's 34.61%, reflecting a more effective monetization strategy.
+
+LioCinema relied heavily on Free → Basic upgrades (8.31%), Jotstar saw stronger movement toward premium (9.63% Free → Premium, 39.79% VIP → Premium), whereas LioCinema struggled with higher-tier upgrades.
+
+Jotstar generated a total revenue of ₹ 47M significantly higher than LioCinema’s ₹18M with January being Jotstar’s best-performing month at ₹ 7,712,796. Both platforms experienced Q4 declines: LioCinema dropped 19.64% in November, and Jotstar fell 49.37%.
+
+To ensure merger success, it was recommended to expand LioCinema’s content library with regional and English-language offerings, introduce a mid-tier VIP plan to reduce downgrades and encourage upgrades, adopt Jotstar’s personalized engagement strategies to improve user retention, tailor regional pricing and content strategies for Tier 2 and Tier 3 cities, and optimize watch time by leveraging Jotstar’s successful content drivers like long-form content and AI-driven recommendations. These actions aim to enhance content diversity, boost monetization, and stabilize revenue post-merger.
+
 ---
 
-## Executive Summary
-
-For the analysis period (January to November 2024), LioCinema successfully accumulated 183,446 users, vastly outpacing Jotstar's 44,620 users—a 4x difference indicating LioCinema's significant market advantage.
-
-<div align="center">
-  <img src="#" alt="Executive Summary Image" width="600"/>
-</div>
-
----
-
-## Data Structure and Initial Checks
+## **Data Structure and Initial Checks**
 
 <details>
 <summary>Click to expand/collapse</summary>
 
-### Data Import
+### **Data Import**
 
 The first step was to import the raw data tables from MySQL databases into Power Query for initial processing. The following tables were imported:
 
@@ -112,64 +141,243 @@ The first step was to import the raw data tables from MySQL databases into Power
 - `subscribers`: Captures subscriber demographics, subscription plans, and activity patterns for Jotstar users.
 - `content_consumption`: Tracks Jotstar-specific user engagement metrics.
 
-### Data Consolidation
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Data%20bases.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+### **Data Consolidation**
 
 To enable comparative analysis between the two platforms, the following consolidation steps were performed:
-- A new column, `platform`, was added to each table to distinguish between LioCinema and Jotstar data.
-- The `subscribers` tables from both databases were appended together to create a unified view of all users.
-- The `contents` tables were appended to combine the content libraries of both platforms.
-- The `content_consumption` tables were merged to analyze watch time and device usage trends collectively.
 
-### Dimension Table Creation
+A new column, `platform`, was added to each table to distinguish between LioCinema and Jotstar data. This ensured that platform-specific insights could still be extracted after appending.
+
+The `subscribers` tables from both databases were appended together to create a unified view of all users across LioCinema and Jotstar. 
+
+This allowed for seamless analysis of demographic trends, subscription patterns, and activity metrics across platforms.
+
+Similarly, the `contents` tables were appended to combine the content libraries of both platforms, enabling insights into content diversity, language preferences, and genre popularity.
+
+The `content_consumption` tables were also merged to analyze watch time and device usage trends for both platforms collectively.
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Power%20Query.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+### **Dimension Table Creation**
 
 To support the analysis and improve the data model’s efficiency, several dimension tables were created:
 - **Platform Dimension Table:** A table listing the two platforms (`LioCinema` and `Jotstar`) was created to serve as a reference for filtering and grouping data by platform.
 - **Subscription Dates Dimension Table:** A calendar table was generated to map subscription dates.
 - **Plan Change Dates Dimension Table:** Another calendar table was created specifically for `plan_change_date` to track upgrades, downgrades, and their timing across both platforms.
 
-### Data Cleaning and Transformation
+### **Data Cleaning and Transformation**
 
 Several transformations were applied in Power Query to ensure data consistency and usability:
 - **Date Formatting:** All date columns were standardized to the `YYYY-MM-DD` format.
 - **Null Handling:** Null values in `last_active_date` were retained as-is to indicate active users.
 - **Unit Standardization:** Watch time was converted from minutes to hours for easier interpretation during analysis.
 
-### Loading into Power BI
+### **Loading into Power BI**
 
-After completing the data preparation in Power Query, the cleaned and transformed datasets were loaded into **Power BI**. Relationships were established between fact tables and dimension tables to create a robust star schema.
+After completing the data preparation in Power Query, the cleaned and transformed datasets were loaded into **Power BI**. Relationships were established between fact tables and dimension tables to create a robust star schema.The ER Diagram can be presented below.
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/ER%20DIAGRAM.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+Custom measures were then created using DAX (Data Analysis Expressions) to calculate key metrics, and then visualizations were created to explore trends, compare platforms, and derive actionable insights.
 
 </details>
 
 ---
 
-## Insights Deep Dive
+## **Insights Deep Dive**
 
-### Subscriber Insights
+### **Subscriber Insights**
 
-By November 2024, LioCinema had a total of 183,446 users, while Jotstar reached 44,620 users. This indicates that LioCinema has a significantly larger user base compared to Jotstar.
+By November 2024 LioCinema had a total of 183,446 users, while Jotstar reached 44,620 users. This indicates that LioCinema has a significantly larger user base compared to Jotstar.
 
-<div align="center">
-  <img src="#" alt="Subscriber Insights Image" width="600"/>
-</div>
+LioCinema consistently outpaced Jotstar in terms of new user acquisition, LioCinema Started with 6,758 users in January and grew to 183,446 users by November, adding approximately 176,688 users over 11 months. This represents a monthly average growth of ~16,062 users.
 
-*(Continue adding placeholders and markdown formatting for the remaining sections)*
+Jotstar on the other hand Began with 3,934 users in January and grew to 44,620 users by November, adding approximately 40,686 users over the same period. This reflects a monthly average growth of ~3,698 users.
+
+ LioCinema’s growth rate was significantly higher than Jotstar’s, as evidenced by the larger increments in its running total each month. For instance: From January to February, LioCinema grew by 7,404 users (109.6% increase), while Jotstar grew by 3,939 users (100.1% increase). From October to November, LioCinema added 37,007 users (25.9% increase), whereas Jotstar added 4,262 users (10.6% increase).
+
+ <img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/groeth%20trend.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+LioCinema had a massive Gen Z user base, with 91.23% of users aged 18-24—10x higher than Jotstar's 8.77% in the same age bracket. This suggests LioCinema is particularly popular among younger audiences.
+
+Jotstar, in contrast, had a stronger presence among the 25-44 age group. While LioCinema still led in these segments, Jotstar's users in the 25-34 (27.84%) and 35-44 (27.72%) categories suggested higher engagement from working professionals.
+
+The 45+ age group was the smallest for both platforms, with LioCinema having 77.28% and Jotstar 22.72%.
+
+LioCinema dominated rural and small-city markets, with 91.19% users in Tier 3 cities, compared to only 6.81% Jotstar users in the same segment. LioCinema’s largest user segment was from Tier 3 cities while Jotstar’s biggest audience was from Tier 1 cities (38.29% of tier 1 users).
+
+LioCinema had a massive free-tier user base (90.26), which supports an ad-driven revenue model. Jotstar, in contrast, had only 9.74% free-tier users, suggesting a stronger reliance on paid subscriptions.
+
+Jotstar offered a VIP plan (19,157 users) while LioCinema did not. This premium category could be key to Jotstar’s revenue strategy, potentially offering exclusive content and perks.
+
+LioCinema’s Basic plan (53,362 users) was absent on Jotstar, meaning Jotstar users may have fewer budget-friendly paid options. However, both platforms had a strong Premium segment, with LioCinema at 50.52% and Jotstar at 49.48%, indicating a demand for high-quality, ad-free content.
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/user%20demographics.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
 
 ---
 
-*(Repeat similar structure for other sections like Content Library Comparison, Inactivity Analysis, Watch Time Analysis, Upgrade and Downgrade Trends, Revenue Analysis, and Recommendations)*
+### **Content Library Comparison**
+
+Jotstar had an extensive content advantage, with 2,360 titles compared to LioCinema’s 1,250 titles, a 47.03% difference making it the platform with the wider selection. 
+
+Jotstar dominated the English-language segment with 800 titles, compared to LioCinema’s 56 titles. This suggests that Jotstar may have a stronger international appeal.
+
+Both platforms focused heavily on Hindi content, with LioCinema offering 424 titles and Jotstar leading with 637 titles—a 50% higher volume. However, Jotstar had greater regional language diversity, featuring Bengali (60 titles), Punjabi (27 titles), and Gujarati (28 titles), whereas LioCinema had zero content in these languages. For South Indian languages, both platforms were nearly equal in Kannada, Malayalam, Tamil, and Telugu content
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/content%20by%20language.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+
+72% of LioCinema’s content consists of movies, making it more film centric. Jotstar, by contrast, has only 50% of movie content, indicating a more balanced content mix. Jotstar offers 35% as series, compared to LioCinema’s 24%. Jotstar is also much stronger in sports content, with 354 sports-related titles (15% of the total library), whereas LioCinema had only 50 sports titles (4% of the total).
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/content%20type%20distribution.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
 
 ---
 
-## Recommendations
+### **Inactivity Analysis**
 
-1. **Leverage Jotstar’s Premium Content to Convert LioCinema’s Free Users**
-2. **Introduce a Mid-Tier VIP Plan to Reduce Downgrades**
-3. **Optimize Content Recommendations to Increase Watch Time**
-4. **Tailor Regional Strategies to Boost Tier 2 and Tier 3 Engagement**
-5. **Address Seasonal Revenue Declines with Targeted Campaigns**
+Jotstar had a significantly higher active user percentage (85.09%) compared to LioCinema (55.13%), indicating stronger user retention and engagement. LioCinema had nearly 45% inactive users, suggesting a potential issue with user retention or content appeal.
 
-<div align="center">
-  <img src="#" alt="Recommendations Image" width="600"/>
+<div style="display: flex; justify-content: space-around; align-items: center;">
+    <img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Jotstar%20status%20distribution.png"
+         style="width: 45%; height: auto;"/>
+    <img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Liocinema%20status.png"
+         style="width: 45%; height: auto;"/>
+
 </div>
+
+LioCinema’s 45+ users had the lowest activity rate (6.33%), indicating that nearly half of the mature users were not engaging regularly. Jotstar maintained an extremely high engagement rate across all age groups, with mid aged users (25-34) being the most active (37.97%) while LioCinema’s engagement declined with age, with Gen Z users (45+) being the most active (22.15%), the opposite trend of its overall older user base.
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+    <img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Jot%20statust%20by%20age.png"
+         style="width: 45%; height: auto;"/>
+    <img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Lio%20status%20by%20age.png"
+         style="width: 45%; height: auto;"/>
+</div>
+
+
+LioCinema’s free-tier users were the least engaged (50.15% active, 49.85% inactive), while premium users had the highest engagement (73.02%). Jotstar had higher engagement even among free users (75.95%), while Premium users showed the strongest activity (94.46%).
+For both platforms the Premium users were the most engaged, meaning paying users are far more likely to stay active.
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+    <img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Jot%20status%20by%20plan.png"
+         style="width: 45%; height: auto;"/>
+    <img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Lio%20status%20by%20plan.png"
+         style="width: 45%; height: auto;"/>
+</div>  
+
+Inactive users watched significantly less content than active users on both platforms. For LioCinema, Inactive users watched on average 12 hours compared to 31 for active users, nearly 3x more watch time among engaged users.
+
+For Jotstar, Inactive users watched 33, while active users watched 132 hours—a massive 4x difference in engagement. Therefore, A strong positive correlation exists between higher watch time and user activity. Users who consume more content are more likely to stay engaged, while lower watch time is a leading indicator of inactivity.
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+    <img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Jot%20avg%20hrs%20by%20status.png"
+         style="width: 45%; height: auto;"/>
+    <img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Lio%20avg%20hrs%20by%20status.png"
+         style="width: 45%; height: auto;"/>
+</div>
+
+---
+
+### **Watch Time Analysis**
+
+Jotstar users watched nearly 4x more content (117.24 hrs) than LioCinema users (25.61 hrs), suggesting higher content engagement and retention.
+
+Watch time was highest in Tier 1 cities for both platforms, decreasing as we moved to lower-tier cities. Jotstar consistently outperformed LioCinema across all tiers, with the biggest gap in Tier 3 cities (Jotstar: 83 hrs vs. LioCinema: 18 hrs).
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/watchtime%20by%20city.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+Both Jotstar and Liocinema users watched most content on Mobile devices, however, Jotstar’s dominance on Mobile (176.06 hrs) remained a key competitive advantage, while LioCinema’s Mobile watch time was significantly lower at 46.05 hrs.
+LioCinema’s Laptop (8 hrs) and TV (13 hrs) usage was also minimal compared to Jotstar (81 hrs and 95 hrs, respectively), suggesting a need for cross-device engagement improvements.
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/watchtime%20by%20device%20type.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+---
+### **Upgrade and Downgrade Trends**
+
+Downgrade volume had been rising for both platforms, but LioCinema faced a steeper escalation. LioCinema saw a surge from 427 downgrades in February to 3,595 in November, peaking in the last quarter of 2024.
+
+Jotstar’s downgrade trend was much more stable, increasing from 41 in February to 652 in December, but remaining lower.
+
+The highest downgrade month for LioCinema was November (3,595 downgrades), indicating dissatisfaction with post-content releases, pricing changes, or lack of compelling retention strategies while Jotstar’s peak downgrade month was December (652 downgrades), which was lower than LioCinema's worst month.
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/downgrade%20trennds.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+LioCinema relied heavily on Free → Basic upgrades (8.31%), Jotstar saw stronger movement toward premium (9.63% Free → Premium, 39.79% VIP → Premium), whereas LioCinema struggled with higher-tier upgrades.
+
+LioCinema had a moderate Basic → Premium conversion rate (5.44%), whereas Jotstar's path was different. Jotstar users tended to go from Free → VIP (11.90%) and then VIP → Premium (39.79%) rather than upgrading directly from free to premium.
+
+LioCinema lacked an intermediate VIP-like plan, which could be why its Basic → Premium upgrade rate was only 5.44%. Jotstar had a significantly higher proportion of paid users (70.99%) compared to LioCinema (34.61%).
+
+
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Upgrade%20transitions.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+Jotstar had a higher paid user percentage (70.99%) compared to LioCinema(34.61%)
+
+Tier 1 cities showed the highest concentration of premium users for both platforms, Jotstar dominated here with 45.84% premium users, whereas LioCinema had 16.98%. This suggests that Jotstar is more successful at converting urban users into paying customers.
+
+`tier 1`
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Tier%20one%20subscription%20plan%20distribution.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+LioCinema maintained stronger premium engagement in Tier 2(27.03%) & Tier 3(17.08%) compared to Jotstar, Tier 2(9.36%) and Tier 3(4.68%). 
+
+`tier 2`
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/tier%202%20plan%20distribution.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+`tier 3`
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/tier%203%20plan%20distribution.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+---
+
+### **Revenue Analysis**
+
+Jotstar generated total revenue of ₹ 46.9M, significantly higher than Liocinema's ₹ 18M, This higher revenue suggests Jotstar has been more effective in driving paid subscriptions or maintaining premium retention. 
+
+LioCinema shows moderate growth until September but struggles with sharp declines in October and November while Jotstar experiences consistent revenue declines throughout the year, with particularly steep drops in the last three months.
+
+LioCinema’s MoM growth rates fluctuate between 19.64% and +21.06%, indicating instability in revenue generation.
+
+Jotstar’s MoM growth rates are consistently negative after February, ranging from -8.83% to -49.37%, signaling systemic challenges in maintaining user engagement and retention.
+
+`Jotstar_revenue`
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/Jot%20revenue.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+`Liocinema_revenue`
+<img src="https://raw.githubusercontent.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/refs/heads/main/Images/lio%20revenue.png"
+     style="width: auto; height: auto; display: block; margin: 40px auto;"/>
+
+--- 
+
+## **Recommendations**
+To ensure a successful merger and the establishment of Lio-Jotstar as the leading OTT platform in India, the following strategic recommendations are proposed.
+### **Leverage Jotstar’s Premium Content to Convert LioCinema’s Free Users**
+To maximize monetization post-merger, the combined platform should prioritize converting LioCinema’s large base of Free users (43.05% active) into paying customers by leveraging Jotstar’s premium content library. For instance, offering exclusive access to Jotstar’s high-demand English and sports content (e.g., 800 English titles and 354 sports titles) through targeted promotions or free trials can incentivize upgrades. This strategy directly addresses LioCinema’s heavy reliance on Free-tier users (90.26%) and aligns with Jotstar’s success in driving paid subscriptions (70.99% paid users).
+
+### **Introduce a Mid-Tier VIP Plan to Reduce Downgrades**
+LioCinema faces a significantly higher downgrade rate (83.39%) compared to Jotstar (38.67%), indicating dissatisfaction with its premium offerings. To address this, the merged platform should introduce a mid-tier VIP plan, similar to Jotstar’s, which offers exclusive previews, ad-free experiences, and bundled benefits. This intermediate upgrade path can reduce downgrades and encourage smoother transitions from Free to Premium plans, as evidenced by Jotstar’s strong VIP → Premium transition rate (39.79%)
+
+### **Optimize Content Recommendations to Increase Watch Time**
+LioCinema’s average watch time (25.61 hours) lags far behind Jotstar’s (117.24 hours), highlighting an opportunity to improve engagement. Post-merger, the platform should adopt Jotstar’s AI-driven recommendation algorithms and personalized content strategies to optimize user experience. For example, promoting binge-worthy series and long-form content that aligns with user preferences can help close the gap and drive higher engagement, particularly among Tier 3 users who currently watch only 18 hours on average.
+
+### **Tailor Regional Strategies to Boost Tier 2 and Tier 3 Engagement**
+LioCinema dominates Tier 3 cities (91.19% of its user base) but struggles with low engagement and paid adoption in these regions. Post-merger, the platform should introduce localized pricing, regional-language content (e.g., Bengali, Gujarati, Punjabi), and culturally relevant promotions to attract and retain Tier 2 and Tier 3 users. For instance, replicating Jotstar’s success in Tier 1 cities (70.99% paid users) by offering affordable subscription tiers in Tier 3 cities could significantly boost revenue and engagement.
+
+### **Address Seasonal Revenue Declines with Targeted Campaigns**
+Both platforms experienced sharp revenue declines in Q4—LioCinema dropped 19.64% in November, and Jotstar fell 49.37% in December. To stabilize revenue post-merger, the combined platform should launch end-of-year campaigns featuring exclusive content releases, holiday-themed promotions, or loyalty rewards. For example, introducing a “Year-End Binge Pass” with discounted access to blockbuster movies or sports events could mitigate seasonal churn and drive sustained revenue growth.
 
 ---
