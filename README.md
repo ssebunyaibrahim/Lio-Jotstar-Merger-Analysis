@@ -69,7 +69,7 @@ Insights and recommendations are provided on:
 ## **Links**
 
 - **[PowerBi File:](https://github.com/ssebunyaibrahim/Lio-Jotstar-Merger-Analysis/blob/52ce63ae30c3a6749c4c2f0cba04ee1d39923ca3/Lio_jotsta_BI%20dashboard.pbix)**
-- **[Interactive Dashboard:](https://lnkd.in/gvgNAM5i)**
+- **[Interactive Dashboard:](https://app.powerbi.com/view?r=eyJrIjoiN2Q3OGY5MjktMTkyYi00NTZhLWFkNTctZTAxZGU1MjAyOWNhIiwidCI6IjA2ODdlOTNmLWI4ZDgtNGI1My1iNzE4LTVhOTY0OWZmZDA4YSJ9&pageName=aa1a663b87237ff0c783)**
 
 ---
 
